@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CustomerBOImpl implements CustomerBo{
+
     CustomerDAO customerDAO = new CustomerDAOImpl();
     @Override
     public boolean save(CustomerDTO dto) throws SQLException, ClassNotFoundException{
@@ -30,11 +31,11 @@ public class CustomerBOImpl implements CustomerBo{
 
     @Override
     public String genarateId() throws SQLException, ClassNotFoundException {
-            return customerDAO.genarateId();
+        return customerDAO.genarateId();
     }
     @Override
     public CustomerDTO search(String id) throws SQLException, ClassNotFoundException {
-             return customerDAO.search(id);
+        return customerDAO.search(id);
     }
 
 }
