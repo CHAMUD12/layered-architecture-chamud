@@ -4,7 +4,7 @@ import com.example.layeredarchitecture.model.CustomerDTO;
 
 import java.sql.SQLException;
 
-public interface CustomerBo {
+public interface CustomerBO {
      boolean save(CustomerDTO dto) throws SQLException, ClassNotFoundException;
      boolean update(CustomerDTO dto) throws SQLException, ClassNotFoundException;
      boolean exist(String id) throws SQLException, ClassNotFoundException;
